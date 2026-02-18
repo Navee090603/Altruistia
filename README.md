@@ -57,21 +57,3 @@ See [`Docs/ExampleOutput.log`](Docs/ExampleOutput.log).
 ## Example email template
 
 See [`Docs/EmailTemplates.md`](Docs/EmailTemplates.md).
-
-
-## Visual Studio Load Fix (for "project not loaded")
-
-If Visual Studio shows **"One or more projects in the solution were not loaded correctly"**:
-
-1. Open **Visual Studio Installer** → Modify your VS instance.
-2. Ensure workloads/components are installed:
-   - **.NET desktop development** workload
-   - **.NET Framework 4.8 targeting pack**
-   - **NuGet package manager**
-3. In VS, run **Tools → NuGet Package Manager → Package Manager Console** and execute:
-   ```powershell
-   Update-Package -reinstall
-   ```
-4. Close VS, delete the solution `.vs/` folder, and reopen `Altruista834OutboundMonitor.sln`.
-
-> This repository uses SDK-style C# projects targeting `net48`; the solution metadata has been aligned to the SDK-style project type for reliable loading in modern Visual Studio.
