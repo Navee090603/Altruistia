@@ -1,0 +1,43 @@
+{
+  "Folders": {
+    "VendorExtractUtility": "C:\\Altruista834\\VendorExtractUtility",
+    "Proprietary": "C:\\Altruista834\\VendorExtractUtility\\Proprietary",
+    "Hold": "C:\\Altruista834\\HOLD",
+    "Drop": "C:\\Altruista834\\DROP",
+    "ReportOutput": "C:\\Altruista834\\Reports"
+  },
+  "Email": {
+    "SmtpHost": "smtp.company.local",
+    "SmtpPort": 587,
+    "EnableSsl": true,
+    "Username": "monitor-service",
+    "Password": "CHANGE_ME",
+    "Sender": "altruista834-monitor@company.com",
+    "ItOpsRecipients": ["itops@company.com"],
+    "InternalRecipients": ["internalteam@company.com"],
+    "ClientRecipients": ["client-notify@client.com"],
+    "RetryCount": 3,
+    "RetryDelaySeconds": 15
+  },
+  "Runtime": {
+    "PollingIntervalSeconds": 20,
+    "RetryCount": 5,
+    "RetryDelayMilliseconds": 2000,
+    "PartialFileStableSeconds": 20,
+    "TimeZoneId": "India Standard Time"
+  },
+  "SLA": {
+    "LargeFileThresholdMb": 700,
+    "ProcessingHoursPerGb": 4.3,
+    "SLAEndIst": "10:00:00"
+  },
+  "Monitoring": {
+    "ExpectedFileCount": 2,
+    "ExpectedFiles": ["C", "Pend_C"],
+    "VendorWindowStart": "06:00",
+    "VendorWindowEnd": "08:30",
+    "HoldWindowEnd": "10:00",
+    "DropCutoff": "09:55",
+    "StaleFileMinutes": 10
+  }
+}
