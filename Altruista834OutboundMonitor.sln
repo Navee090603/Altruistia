@@ -1,6 +1,7 @@
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28701.123
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altruista834OutboundMonitor", "Altruista834OutboundMonitor/Altruista834OutboundMonitor.csproj", "{70D881FC-DA3C-43F6-99A4-DF7C81D4ED0D}"
 EndProject

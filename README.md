@@ -57,29 +57,3 @@ See [`Docs/ExampleOutput.log`](Docs/ExampleOutput.log).
 ## Example email template
 
 See [`Docs/EmailTemplates.md`](Docs/EmailTemplates.md).
-
-
-## Visual Studio 2019 Support / Load Fix
-
-If Visual Studio 2019 shows **"One or more projects in the solution were not loaded correctly"**:
-
-1. Open **Visual Studio Installer** → Modify your VS instance.
-2. Ensure workloads/components are installed:
-   - **.NET desktop development** workload
-   - **.NET Framework 4.8 targeting pack**
-   - **NuGet package manager**
-3. Open the solution and run **Restore NuGet Packages** (right-click solution).
-4. If restore fails, open **Package Manager Console** and run:
-   ```powershell
-   Update-Package -reinstall
-   ```
-5. Close VS, delete the solution `.vs/` folder, and reopen `Altruista834OutboundMonitor.sln`.
-
-> The repository now uses classic .NET Framework (`v4.8`) project files to maximize compatibility with Visual Studio 2019.
-
-
-### Build on Visual Studio 2019 Developer Command Prompt
-
-```powershell
-MSBuild.exe Altruista834OutboundMonitor.sln /t:Restore,Build /p:Configuration=Release
-```
