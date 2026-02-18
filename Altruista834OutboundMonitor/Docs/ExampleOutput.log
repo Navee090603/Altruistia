@@ -1,0 +1,6 @@
+2026-02-18 06:00:00.0100|INFO|1|Altruista834OutboundMonitor.Services.LoggingService|Application bootstrapping started.
+2026-02-18 06:00:00.0312|INFO|6|Altruista834OutboundMonitor.Services.LoggingService|Altruista834OutboundMonitor execution started.
+2026-02-18 06:05:12.5581|INFO|11|Altruista834OutboundMonitor.Services.LoggingService|Detected created file: C:\Altruista834\VendorExtractUtility\C_20260218.txt
+2026-02-18 06:05:35.1110|INFO|8|Altruista834OutboundMonitor.Services.LoggingService|Processing [IT-OPS] file C_20260218.txt (718.12 MB).
+2026-02-18 06:06:00.0002|WARN|8|Altruista834OutboundMonitor.Services.LoggingService|Email send failed (attempt 1): Timeout connecting to SMTP host.
+2026-02-18 06:06:15.0910|INFO|8|Altruista834OutboundMonitor.Services.LoggingService|Email sent: [INCIDENT] SLA breach risk for C_20260218.txt -> internalteam@company.com
